@@ -1,10 +1,10 @@
-package org.example;
+package org.example.coordinate;
 
 import java.util.Comparator;
 
-public class CoordinateComparator implements Comparator<Coodinate> {
+public class CoordinateComparator implements Comparator<Coordinate> {
     @Override
-    public int compare(Coodinate o1, Coodinate o2) {
+    public int compare(Coordinate o1, Coordinate o2) {
         if (o1.getY() != o2.getY()) {
             return o2.getY() - o1.getY();
         }
