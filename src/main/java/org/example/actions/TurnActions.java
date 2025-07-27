@@ -33,7 +33,6 @@ public class TurnActions extends Thread{
             }
             if (input == nextTurn) {
                 nextTurn();
-                int a = 123;
             }
             while (input == startSimulation) {
                 startSimulation();
@@ -113,7 +112,7 @@ public class TurnActions extends Thread{
     }
 
     private boolean isCreatureMustDie (Creature creature){
-        return creature.getHunger() == 8 | creature.getHp() <= 0;
+        return creature.getHunger() >= 8 | creature.getHp() <= 0;
     }
 
     public void incrementIndex (){
